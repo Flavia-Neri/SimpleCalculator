@@ -14,7 +14,7 @@ for (let i=0; i<tr.length; i++){
 }
 equal.addEventListener("click", function showCalc(){
     if(elements!=""){
-        expression=elements.join('').replace(/X/ig, '*').replace(/,/g, '.');
+        expression=elements.join('').replace(/X/ig, '*').replace(/,/g, '.').replace(/π/g, Math.PI.toFixed(2));
         result.innerHTML = eval(expression).toString().replace(/\./g, ',');              
     }else{
         result.innerHTML = '0';

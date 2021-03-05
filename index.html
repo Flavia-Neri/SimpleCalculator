@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=NO" >
+    <link rel="stylesheet" href="Assets/style.css">
+    <link rel="icon" type="image" href="Assets/Images/calc.png">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="balls">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball">
+           by Flávia Neri
+        </div>
+        <div class="ball"></div>
+    </div>
+    <div class="calculator">
+        <section class="display">
+            <div id="calc"></div>
+            <div id="result"></div>
+        </section>
+        <section class="keyboard">
+            <table>
+                <tr>
+                    <td class="simbol elemento"  >(</td>
+                    <td class="simbol elemento"  >)</td>
+                    <td class="simbol"  id="clear">C</td>
+                    <td class="simbol"><img id="delete" src="Assets/Images/clear.png" alt=""></td>
+                    <td class="simbol elemento" >+</td>
+                </tr>
+                <tr>
+                    <td class="number elemento" colspan="2" value="7">7</td>
+                    <td class="number elemento" value="8">8</td>
+                    <td class="number elemento" value="9">9</td>
+                    <td class="simbol elemento" value="-">-</td>
+                </tr>
+                <tr>
+                    <td class="number elemento" colspan="2" value="4">4</td>
+                    <td class="number elemento" value="5">5</td>
+                    <td class="number elemento" value="6">6</td>
+                    <td class="simbol elemento" value="X">X</td>
+                </tr>
+                <tr>
+                    <td class="number elemento" colspan="2" value="1">1</td>
+                    <td class="number elemento" value="2">2</td>
+                    <td class="number elemento" value="3">3</td>
+                    <td class="simbol elemento" value="/">/</td>
+                </tr>
+                <tr>
+                    <td class="simbol elemento" colspan="2" id="pi">π</td>
+                    <td class="number elemento" value="0">0</td>
+                    <td class="simbol elemento" value=",">,</td>
+                    <td class="simbol" id="equal">=</td>
+                </tr>
+            </table>
+        </section>
+    </div>
+    <script src="Assets/script.js"></script>
+</body>
+</html>
